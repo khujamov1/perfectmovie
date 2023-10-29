@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css">
+    <title>Movies</title>
+</head>
+<body>
+    
+    
+    <header class="site-header">
+        <div class="container">
+            <form class="site-form">
+                <input type="text" class="search-movie" placeholder="Search movie" aria-label="Search movie">
+                <input type="text" class="from-movie" placeholder="From ..." aria-label="Filter movie When it Started producing">
+                <input type="text" class="to-movie" placeholder="To ..." aria-label="Filter movie when it finish producing">
+                <select class="movie-type">
+                    <option value="All">All</option>
+                </select>
+                <select class="sort-movie">
+                    <option value="" hidden>Sort</option>
+                    <option value="Old-New">Old-New</option>
+                    <option value="New-Old">New-Old</option>
+                    <option value="A-Z">A-Z</option>
+                    <option value="Z-A">Z-A</option>
+                </select>
+                <button class="form-btn" type="submit">Submit</button>
+            </form>
+        </div>
+    </header>
+    
+    <main class="site-main">
+        <div class="container">
+            <ul class="movie-list">
+            </ul>
+            
+            <template class="movie-template">
+                <li class="movie-item">
+                    <img src="" alt="" class="movie-img">
+                    <h3 class="movie-title"></h3>
+                    <div class="movie-addition-info">
+                        <span class="movie-rating"></span>
+                        <span class="movie-year"></span>
+                        <span class="movie-duration"></span>
+                    </div>
+                    <p class="movie-category"></p>
+                    <button type="button" class="movie-info">More Info</button>
+                </li>
+            </template>
+        </div>
+    </main>
+    
+    <script src="./js/movie.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>
